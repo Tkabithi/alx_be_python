@@ -1,8 +1,7 @@
 # Global conversion factors
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9 #no spaces inbetween the numbers
 
-FREEZING_POINT_OFFSET = 32  # The 32°F difference between scales
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius using the global factor."""
@@ -19,8 +18,7 @@ def main():
     """Handle user interaction and perform conversions."""
     try:
         # Get user input
-        temp_input = input("Enter the temperature to convert: ")
-        temperature = float(temp_input)  # This will raise ValueError if not numeric
+        temperature = float(input("Enter the temperature to convert: "))  # Raises ValueError if not numeric
         
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
         
