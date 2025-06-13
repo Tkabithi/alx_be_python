@@ -1,6 +1,7 @@
 # Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+
 FREEZING_POINT_OFFSET = 32  # The 32°F difference between scales
 
 def convert_to_celsius(fahrenheit: float) -> float:
