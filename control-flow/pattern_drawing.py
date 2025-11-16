@@ -3,7 +3,7 @@ i = 0
 
 while i < square_size:
     for j in range(square_size):
-        print("*",end="")
+        print(f"{i},{j}",end=" ")
     print()
     i += 1
 
