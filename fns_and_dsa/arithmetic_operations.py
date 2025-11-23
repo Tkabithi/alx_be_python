@@ -1,7 +1,6 @@
-def perform_operation(num1: float, num2: float, operation: str):
-  
-    operation = operation.lower().strip()
-    
+# arithmetic_operations.py
+
+def perform_operation(num1, num2, operation):
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
@@ -10,7 +9,7 @@ def perform_operation(num1: float, num2: float, operation: str):
         return num1 * num2
     elif operation == 'divide':
         if num2 == 0:
-            return "Error: division by zero"  # Return error message as string
+            return "Error! Division by zero."
         return num1 / num2
     else:
-        raise ValueError("Error: Invalid operation.")
+        return "Invalid operation"
